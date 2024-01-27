@@ -1,0 +1,153 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-image: url("background2.jpg");
+    background-size: cover;
+}
+header{
+    height: 90px;
+    background-color: pink;
+    animation: bgAnime 0.5s ease-in 0s infinite;
+
+}
+
+@keyframes bgAnime{
+    from{background-color:pink ;}
+    to{background-color: rgb(221, 153, 212);}
+}
+img{    
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    top: 13%;
+    right: 13%;
+}
+.fHead0{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    color:rgb(230, 240, 139);
+    background-color: black;
+    
+    transition: ease-in;
+    transition-duration: 3s;
+    
+
+}
+.fHead0:hover{
+    font-size: 20%;
+    background-color: rgb(230, 240, 139);
+    color:  black;
+    
+
+}
+.fHead1{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    animation: sizeAnime 2s ease-in-out 0s infinite; 
+
+}
+@keyframes sizeAnime {
+    from{font-size: 16px;}
+    to{font-size: 18px}    
+}
+
+
+
+
+.nextDiv{
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgb(46, 7, 83);
+    background-color: rosybrown;  
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}    
+    
+.nextDiv:hover{
+    height: 410px;
+    background-color: cornflowerblue;
+    font-size: 15px;
+    transform: translate(20px,-30px);
+    transform: scale(100px, 100px);
+    /**transform: rotate(15deg);**/    
+}
+.mainDiv{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.innerDiv{  
+    overflow: scroll;
+    margin-top: 20px;
+    margin-left: 10%;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(179, 207, 211);
+    border:  solid rgb(46, 7, 83);
+    border-style: dashed;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
+}
+.innerDiv:hover{
+    background-color: rgb(236, 152, 127);
+    font-size: 20px;
+    transform: translateX(10px);
+    
+}
+ 
+.lGoal{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(200, 132, 255);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.lGoal:hover{
+    transform: translateY(10px);
+    font-size: 15px;
+}
+.tGoal{
+    margin-top:10px ;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(105, 164, 182);
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.tGoal:hover{
+    transform: translateY(10px);
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    /* Single column layout on smaller screens */
+    .mainDiv {
+        flex-direction: column;
+    }
+
+    .nextDiv {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /* Adjust font sizes and margins as needed */
+    .fHead0 {
+        font-size: 1.2em;
+    }
+
+    /* ... other adjustments ... */
+}

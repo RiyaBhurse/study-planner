@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+
+        <div class="fHead0">
+            <h1>
+                Study Planner
+            </h1>
+        </div>
+        <div class="fHead1">
+            <p">
+                <b>
+                   " DONT ASK ANYONE FOR HELP UNTIL YOU YOURSELF FAIL TO FIND ANSWER! "
+                </b>
+            </p>
+        </div>
+        
+        
+    </header>
+   
+    <div class="lGoal">
+        <p>MY FINAL GOAL IS &#45;&#45;&gt; </p>
+        <input type="text" id="longTermGoalInput" placeholder="enter long term goal">
+        <button id="longTermEnter" onclick="enterLongTermGoal()">Enter</button>
+        <p id="longTermGoalText" style="display: none;"></p>
+    </div>
+    <div class="tGoal">
+        <p>MY TODAY'S GOAL IS &#45;&#45;&gt;</p>
+        <input type="text" id="todayGoalInput" placeholder="enter today's goal">
+        <button id="todayEnter" onclick="enterTodayGoal()">Enter</button>
+        <p id="todayGoalText" style="display: none;"></p>
+    </div>
+    <div class="mainDiv">       
+        <div class="nextDiv">
+            <div><h1>TO DO</h1></div>
+            <div class="innerDiv" id="todoList">
+                <p>Add Your Task:</p>
+                <input type="text" id="taskInput" placeholder="type...">
+                <button onclick="addTask()">ADD</button>
+            </div>
+        </div>
+        
+        <div class="nextDiv">
+            <div><h1> DONE </h1></div>
+            <div class="innerDiv" id="doneList">
+                <ol id="doneTasks"></ol>
+            </div>
+        </div>
+        
+          
+        <div class="nextDiv">
+            <div><h2>WHERE DID YOU WASTE YOUR TIME?</h2></div>
+            <div class="innerDiv">
+                <input type="text" id="wasteTimeInput" placeholder="type...">
+                <button onclick="addWasteTime()">ADD</button>
+                <ol id="wasteTimeList"></ol>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
